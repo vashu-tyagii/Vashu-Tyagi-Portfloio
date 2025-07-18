@@ -1,8 +1,5 @@
 # Vashu Tyagi | Data Scientist Portfolio
 
-## Live Demo
-**[View My Portfolio Live!](https://vashu-tyagi-official.github.io/Vashu-Tyagi-Portfolio/)**
-
 ## Overview
 
 Welcome to the personal portfolio website of **Vashu Tyagi**, an enthusiastic and analytical Data Scientist. This platform serves as a showcase of my skills, projects, and educational background, demonstrating my passion for leveraging data to solve real-world problems and drive informed decision-making.
