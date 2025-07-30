@@ -118,7 +118,7 @@ body::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #55d2f1;
+    border: #d64f4f solid 3px;
     border-radius: 12px;
     padding: 16px 30px;
     text-align: center;
@@ -224,7 +224,7 @@ body::before {
     border-radius: 20px;
     gap: 15px;
     margin-bottom: 20px;
-    border: #55d2f1 solid 2px;
+    border: #ff8383 solid 2px;
 }
 
 .connection p {
@@ -256,7 +256,7 @@ body::before {
     font-size: 16px;
     position: relative;
     padding: 1em 2.5em;
-    border: none;
+    border: #ff4d4d solid 3px;
     background: linear-gradient(46deg, #eebd89, #d13abd);
     box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
     margin-top: 14px;
@@ -310,7 +310,7 @@ body::before {
 
 /* About Me Description Box */
 .about-me-description {
-    border: #7cf6ff solid 2px;
+    border: #ff8383 solid 2px;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
@@ -340,64 +340,56 @@ body::before {
     font-size: 1.8rem;
 }
 
-/* Container for Degree Boxes */
-.degree-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-/* Individual Degree Box Styling */
-.degree-box {
-    border: #fff solid 2px;
-    padding: 25px;
-    color: #fff;
-    border-radius: 17px;
-    height: auto;
-    min-height: 180px;
-    width: 450px;
-    max-width: 100%;
+.skill-sets {
+    border: #ff8383 solid 2px;
+    border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    backdrop-filter: blur(50px);
+    color: #fff;
+    padding: 30px;
+    font-size: 21px;
+    line-height: 1.8;
+    margin: 30px auto;
+    height: auto;
+    max-width: 700px;
 }
 
-/* Degree Box Hover Effect */
-.degree-box:hover {
-    transform: translateY(-5px);
-    border-color: #7cf6ff;
+/* Styling for each skill category (e.g., Frontend Development) */
+.skill-sets div {
+    margin-bottom: 25px;
 }
 
-/* Degree Name Text */
-.degree-name {
-    font-size: 22px;
-    color: aqua;
-    text-decoration: underline;
-    margin-bottom: 7px;
+.skill-sets div:last-child {
+    margin-bottom: 0;
 }
 
-/* University, CGPA, College Name Text */
-.university-name,
-.cgpa,
-.college-name {
-    font-size: 19px;
-    margin-bottom: 5px;
+.skill-sets div h4 {
+    border-bottom: #ff8383 solid 2px;
+    max-width: fit-content;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #55d2f1;
+    text-transform: uppercase;
 }
 
-/* College Link Styling */
-.college-link {
-    text-decoration: none;
-    color: #7cf6ff;
-    transition: color 0.3s ease;
+/* Styling for individual skill tags */
+.skill-sets div span {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(85, 210, 241, 0.15);
+    border: #ff8383 solid 1px;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 5px 8px 5px 0;
+    white-space: nowrap;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* College Link Hover Effect */
-.college-link:hover {
-    color: #ff8383;
+.skill-sets div span:hover {
+    background-color: rgba(85, 210, 241, 0.3);
+    transform: translateY(-2px);
 }
 
 /* EXPERIENCE SECTION */
@@ -423,7 +415,7 @@ body::before {
     flex-direction: column;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
-    border: 2px solid rgba(135, 206, 235, 0.3);
+    border: #ff8383 solid 2px;
     transition: none;
     position: relative;
     overflow: hidden;
@@ -559,7 +551,7 @@ body::before {
     cursor: pointer;
     margin: 10px 10%;
     height: 45px;
-    border: #55d2f1 solid 2px;
+    border: #ff8383 solid 2px;
     border-radius: 25px;
     font-size: 1.1em;
     background: linear-gradient(91deg, #b0fcd8, #ff2b2b);
@@ -593,7 +585,7 @@ body::before {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9em;
-    border: 2px solid #7cf6ff;
+    border: #ff8383 solid 2px;
 }
 
 /* CONTACT ME SECTION */
@@ -611,7 +603,7 @@ body::before {
     backdrop-filter: blur(100px);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(85, 210, 241, 0.3);
+    border: #ff8383 solid 2px;
 }
 
 /* Contact Section Introduction Text */
