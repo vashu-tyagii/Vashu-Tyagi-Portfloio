@@ -494,10 +494,10 @@ body::before {
 .project-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
     align-items: stretch;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 /* Individual Project Card Styling */
@@ -506,7 +506,6 @@ body::before {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
     width: 30%;
     min-width: 300px;
