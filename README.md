@@ -26,10 +26,13 @@ My expertise spans **machine learning**, **statistical modeling**, **data analys
 ## Technologies Used
 
 ### Frontend & Design
-
-- **HTML5:** For structuring web content.
-- **CSS3:** For styling and responsive design.
-- **Font Awesome:** For scalable vector icons.
+- **HTML5:** Semantic markup for structure, accessibility, and SEO.
+- **CSS3:** Responsive layouts using Flexbox and Grid, media queries, transitions, and animations.
+- **Responsive Frameworks:** Bootstrap (or similar) for rapid, mobile-first UI development.
+- **Preprocessors & Tooling:** Sass for modular styles; PostCSS/Autoprefixer for cross-browser compatibility.
+- **Iconography & Typography:** Font Awesome for scalable icons and Google Fonts for consistent typography.
+- **Build & Dev Tools:** npm and modern bundlers (Vite/Webpack/Parcel) plus Live Server for local development.
+- **Accessibility & Performance:** ARIA roles, semantic elements, image optimization, and lazy loading strategies.
 
 ### Data Science & Tools (Applied in Projects)
 
