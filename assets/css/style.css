@@ -838,3 +838,102 @@ img {
     text-align: center;
   }
 }
+
+
+/* ==================================== */
+/* === EXPERIENCE SECTION STYLES  === */
+/* ==================================== */
+.experience {
+  /* Inherits .section padding */
+  background-color: #f9f9f9;
+  /* Light background like the portfolio/services sections */
+  padding-bottom: 4rem;
+}
+
+.experience__container {
+  row-gap: 2rem;
+}
+
+.experience__data {
+  background-color: #2a3749;
+  /* Dark card background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.experience__data:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience__role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e4a109;
+  /* Gold accent color */
+  margin-bottom: 0.25rem;
+}
+
+.experience__company {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f9f9f9;
+  /* White text for company name */
+  margin-bottom: 0.5rem;
+}
+
+.experience__duration {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #a2acbd;
+  /* Greyed text for duration */
+  margin-bottom: 1rem;
+}
+
+.experience__duration i {
+  margin-right: 0.5rem;
+}
+
+.experience__details {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.experience__details li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 0.938rem;
+  color: #a2acbd;
+  /* Greyed text for details */
+}
+
+.experience__details li::before {
+  content: "•";
+  /* Using a simple bullet for list items */
+  position: absolute;
+  left: -1.5rem;
+  color: #e4a109;
+  /* Gold bullet point */
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Stick to 2 columns for wider entries */
+    gap: 2rem;
+  }
+}
