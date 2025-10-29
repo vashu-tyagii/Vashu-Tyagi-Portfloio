@@ -3,295 +3,293 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Vashu Tyagi | Portfolio</title>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/media.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description"
+    content="Vashu Tyagi's professional portfolio showcasing expertise in Machine Learning, Data Wrangling, Data Visualization, and Cloud Deployment." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="YOUR_PORTFOLIO_URL_HERE" />
+  <meta property="og:title" content="Vashu Tyagi | Portfolio" />
+  <meta property="og:description"
+    content="Vashu Tyagi's professional portfolio showcasing expertise in Machine Learning, Data Wrangling, Data Visualization, and Cloud Deployment." />
+  <meta property="og:image" content="https://freefolio.web.app/images/indify.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="YOUR_PORTFOLIO_URL_HERE" />
+  <meta name="twitter:title" content="Vashu Tyagi | Data Scientist Portfolio" />
+  <meta name="twitter:description"
+    content="Vashu Tyagi's professional portfolio showcasing expertise in Machine Learning, Data Wrangling, Data Visualization, and Cloud Deployment." />
+  <meta name="twitter:image" content="https://freefolio.web.app/images/indify.png" />
+  <meta name="twitter:image:alt" content="Vashu Tyagi Data Scientist Portfolio">
+
+  <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header id="header" class="header">
-    <div class="container container-lg">
-      <div class="header-nav">
-        <a href="#home" class="logo" data-aos="fade-down" data-aos-duration="1000">Vashu Tyagi</a>
-        <nav id="nav" class="nav">
-          <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
-            <li class="nav-item">
-              <a href="#home" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          <button id="nav-btn" class="nav-btn">
-            <img id="nav-btn-img" src="img/icons/open.svg" alt="Navigation button" />
-          </button>
-        </nav>
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Vashu Tyagi</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
   </header>
-
-  <section id="home" class="hero">
-    <div class="container container-lg">
-      <div class="hero-row" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500"
-        data-aos-duration="1000">
-        <div class="hero-content">
-          <span class="hero-greeting"> Hello, I am</span>
-          <h1 class="hero-heading">Vashu Tyagi</h1>
-          <span class="hero-heading-subtitle">Data Scientist</span>
-          <div class="about-social-list">
-            <div class="social-links-row">
-              <a href="https://github.com/vashu-tyagii" target="_blank" rel="noopener noreferrer">
-                <img src="img/social_icons/github.svg" alt="Link to GitHub account" />
-              </a>
-
-              <a href="https://www.linkedin.com/in/vashu-tyagi-310342375/" target="_blank" rel="noopener noreferrer">
-                <img src="img/social_icons/linkedin.svg" alt="Link to linkedin profile" />
-              </a>
-
-              <a href="https://www.facebook.com/vashu.tyagii" target="_blank" rel="noopener noreferrer">
-                <img src="img/social_icons/facebook.svg" alt="Link to facebook profile" />
-              </a>
-
-              <a href="https://www.instagram.com/vashu.tyagii/" target="_blank" rel="noopener noreferrer">
-                <img src="img/social_icons/instagram.svg" alt="Link to instagram profile" />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <a href="#projects" class="btn">My Portfolio</a>
-            <a href="#contact" class="btn btn-white">Contact Me</a>
-          </div>
+  <section class="home" id="home">
+    <div class="home__container bd-container bd-grid">
+      <div class="home__data">
+        <div class="home__greeting" data-aos="fade-up">
+          <span>HELLO,</span>
         </div>
-        <div class="hero-img">
-          <img src="img/hero/hero.png" alt="Picture of Christian Buehner taken from Unsplash</a>
-              " />
+        <div class="home__title" data-aos="fade-up">
+          <h1>I'm Vashu Tyagi</h1>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <div class="about-title">
-        <h2 class="title">About Me</h2>
-      </div>
-      <div class="about-row">
-        <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
-          <p class="about-descr">
-            Hi, I'm Vashu Tyagi, a passionate Data Scientist and developer
-            specializing in machine learning, data analytics and web development.
-            With expertise in turning complex data into actionable insights,
-            I love solving real-world problems through data-driven approaches.
-            My skills span across statistical analysis, predictive modeling,
-            and creating interactive data visualizations. <br /><br />I'm always
-            eager to take on new challenges and collaborate on innovative
-            projects that make a difference!
+        <div class="home__career" data-aos="fade-up">
+          <p>Data Scientist</p>
+        </div>
+        <div class="home__description" data-aos="fade-up">
+          <p>
+            A Data Scientist focused on building predictive models, optimizing business processes, and extracting
+            actionable insights from complex datasets using Python, R, and cloud platforms.
           </p>
-          <div class="about-download-btn">
-            <a href="#!" class="btn btn-white">Download CV</a>
-          </div>
         </div>
-        <div class="about-skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          <div class="skill">
-            <div class="skill-title"><b><i>Python </i></b>(Numpy, Pandas, Matplotlib, Seaborn)</div>
-            <div class="skill-percent">95%</div>
-            <div class="skill-bar__progress">
-              <div class="skill-bar__fill" data-progress="95"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-title"><b><i>SQL </i></b>(MySQL)</div>
-            <div class="skill-percent">90%</div>
-            <div class="skill-bar__progress">
-              <div class="skill-bar__fill" data-progress="90"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-title"><b><i>Machine Learning </i></b>(Scikit-learn, TensorFlow)</div>
-            <div class="skill-percent">65%</div>
-            <div class="skill-bar__progress">
-              <div class="skill-bar__fill" data-progress="65"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-title"><b><i>Git & GitHub</i></b></div>
-            <div class="skill-percent">80%</div>
-            <div class="skill-bar__progress">
-              <div class="skill-bar__fill" data-progress="80"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill-title"><b><i>Mathematics </i></b>(Statistics, Calculus)</div>
-            <div class="skill-percent">80%</div>
-            <div class="skill-bar__progress">
-              <div class="skill-bar__fill" data-progress="80"></div>
-            </div>
-          </div>
+        <div class="home__button">
+          <a href="#" download="">
+            <button class="home__download" data-aos="fade-up">DOWNLOAD CV</button>
+          </a>
+        </div>
+        <div class="home__social" data-aos="fade-up">
+          <a href="https://www.facebook.com/vashu.tyagii" class="home__icon" target="_blank"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://github.com/vashu-tyagii" class="home__icon" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/vashu.tyagii/" target="_blank" class="home__icon"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/vashu-tyagi-310342375/" target="_blank" class="home__icon"><i
+              class="fab fa-linkedin"></i></a>
+          <!-- <a href="#" target="_blank" class="home__icon"><i class="fab fa-youtube"></i></a> -->
+        </div>
+        <div class="home__img" data-aos="fade-up">
+          <img src="./assets/img/main-image.svg" alt="" class="home-image" />
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects">
-    <div class="container container-lg">
-      <div class="projects-title">
-        <h2 class="title">Projects</h2>
+  <section class="services" id="services">
+    <h2 class="section-title" data-aos="fade-up">CORE SKILLS</h2>
+    <p class="section-subtitle" data-aos="fade-up">
+      My technical expertise covers the end-to-end data science lifecycle, from data wrangling to deployment.
+    </p>
+    <div class="services__container bd-container bd-grid">
+
+      <div class="services__data skill__tile" data-aos="fade-up">
+        <div class="services__img">
+          <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="none" />
+            <line x1="50" y1="50" x2="125" y2="125" stroke="#E4A109" stroke-width="4" />
+            <line x1="50" y1="150" x2="125" y2="125" stroke="#E4A109" stroke-width="4" />
+            <line x1="125" y1="125" x2="200" y2="50" stroke="#E4A109" stroke-width="4" />
+            <line x1="125" y1="125" x2="200" y2="150" stroke="#E4A109" stroke-width="4" />
+            <circle cx="50" cy="50" r="10" fill="#F9F9F9" />
+            <circle cx="50" cy="150" r="10" fill="#F9F9F9" />
+            <circle cx="125" cy="125" r="12" fill="#E4A109" />
+            <circle cx="200" cy="50" r="10" fill="#F9F9F9" />
+            <circle cx="200" cy="150" r="10" fill="#F9F9F9" />
+            <rect x="180" y="20" width="30" height="30" fill="#2A3749" stroke="#E4A109" stroke-width="3" />
+            <text x="185" y="45" font-family="Arial" font-size="28" fill="#E4A109">Σ</text>
+          </svg>
+        </div>
+        <div class="skill__content-wrapper">
+          <h3 class="services__title">Machine Learning</h3>
+          <p class="services__description">
+            Building and optimizing models (Regression, Classification, Clustering) using Scikit-learn, TensorFlow, and
+            PyTorch.
+          </p>
+        </div>
       </div>
 
-      <div class="projects-row">
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">Finance Dashboard</h5>
-                <p class="white">UI/UX Design</p>
-              </div>
-            </div>
-          </a>
+      <div class="services__data skill__tile" data-aos="fade-up">
+        <div class="services__img">
+          <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="none" />
+            <polygon points="50,50 200,50 160,100 90,100" fill="#2A3749" stroke="#E4A109" stroke-width="4" />
+            <rect x="115" y="100" width="20" height="30" fill="#2A3749" />
+            <rect x="60" y="10" width="15" height="15" fill="#F9F9F9" />
+            <circle cx="85" cy="20" r="5" fill="#E4A109" />
+            <rect x="160" y="30" width="10" height="20" fill="#F9F9F9" />
+            <rect x="60" y="150" width="130" height="70" fill="#F9F9F9" stroke="#2A3749" stroke-width="2" />
+            <line x1="60" y1="170" x2="190" y2="170" stroke="#2A3749" stroke-width="2" />
+            <line x1="95" y1="150" x2="95" y2="220" stroke="#2A3749" stroke-width="2" />
+            <line x1="155" y1="150" x2="155" y2="220" stroke="#2A3749" stroke-width="2" />
+          </svg>
         </div>
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="300"
-          data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">Product design</h5>
-                <p class="white">UI/UX Design</p>
-              </div>
-            </div>
-          </a>
+        <div class="skill__content-wrapper">
+          <h3 class="services__title">Data Wrangling</h3>
+          <p class="services__description">
+            Cleaning, transforming, and merging large datasets using Pandas, NumPy, and SQL for feature engineering.
+          </p>
         </div>
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="600"
-          data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">Landing Page</h5>
-                <p class="white">UI/UX Design, Web Development</p>
-              </div>
-            </div>
-          </a>
+      </div>
+
+      <div class="services__data skill__tile" data-aos="fade-up">
+        <div class="services__img">
+          <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="none" />
+            <rect x="25" y="35" width="200" height="150" rx="15" fill="#2A3749" stroke="#E4A109" stroke-width="4" />
+            <rect x="45" y="120" width="20" height="50" fill="#E4A109" />
+            <rect x="75" y="90" width="20" height="80" fill="#F9F9F9" />
+            <rect x="105" y="135" width="20" height="35" fill="#E4A109" />
+            <polyline points="140,140 160,100 180,130 200,90" fill="none" stroke="#F9F9F9" stroke-width="4" />
+            <circle cx="140" cy="140" r="5" fill="#E4A109" />
+            <circle cx="160" cy="100" r="5" fill="#E4A109" />
+            <circle cx="180" cy="130" r="5" fill="#E4A109" />
+            <circle cx="200" cy="90" r="5" fill="#E4A109" />
+          </svg>
         </div>
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="900"
-          data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">Portfolio</h5>
-                <p class="white">Web Development</p>
-              </div>
-            </div>
-          </a>
+        <div class="skill__content-wrapper">
+          <h3 class="services__title">Data Visualization</h3>
+          <p class="services__description">
+            Creating compelling, interactive dashboards and reports with Tableau, Power BI, Matplotlib, and Seaborn.
+          </p>
         </div>
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1200"
-          data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">Cosmic Sea</h5>
-                <p class="white">UI/UX Design, Web Development</p>
-              </div>
-            </div>
-          </a>
+      </div>
+
+      <div class="services__data skill__tile" data-aos="fade-up">
+        <div class="services__img">
+          <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" fill="none" />
+            <circle cx="80" cy="90" r="30" fill="#F9F9F9" />
+            <circle cx="130" cy="65" r="40" fill="#F9F9F9" />
+            <circle cx="180" cy="90" r="30" fill="#F9F9F9" />
+            <rect x="70" y="85" width="120" height="35" fill="#F9F9F9" />
+            <rect x="100" y="170" width="50" height="50" rx="5" fill="#2A3749" stroke="#E4A109" stroke-width="3" />
+            <text x="108" y="200" font-family="Arial" font-size="20" fill="#F9F9F9">MODEL</text>
+            <line x1="125" y1="165" x2="125" y2="120" stroke="#E4A109" stroke-width="5" marker-end="url(#arrowhead)" />
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#E4A109" />
+              </marker>
+            </defs>
+          </svg>
         </div>
-        <div class="project-box" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1500"
-          data-aos-duration="1000">
-          <a href="#!">
-            <img class="project-img" src="img/project_img/" alt="" />
-            <div class="project-mask">
-              <div class="project-caption">
-                <h5 class="white">eCommerce</h5>
-                <p class="white">Web Development</p>
-              </div>
-            </div>
-          </a>
+        <div class="skill__content-wrapper">
+          <h3 class="services__title">Deployment & Cloud</h3>
+          <p class="services__description">
+            Deploying models with Flask/Streamlit and using cloud services like AWS Sagemaker and Azure ML.
+          </p>
         </div>
       </div>
     </div>
   </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="contact-title">
-        <h2 class="title">Contact</h2>
-      </div>
-      <div class="contact-content">
-        <p>
-          Tell me about your project.
-          <br />
-          Let's talk and work together!
-        </p>
-      </div>
-
-      <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="input-box">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email Address" required />
+  <section class="portfolio" id="portfolio">
+    <h2 class="section-title" data-aos="fade-up">PROJECTS</h2>
+    <p class="section-subtitle" data-aos="fade-up">
+      Selected projects demonstrating my ability to apply data science methods to real-world problems.
+    </p>
+    <div class="portfolio__container bd-container bd-grid swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="portfolio__data swiper-slide">
+          <h3 class="portfolio__title">Churn Prediction Model</h3>
+          <div class="portfolio__img">
+            <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+1+Image" alt="Churn Prediction Model Image" />
+          </div>
+          <p class="portfolio__description">
+            Built an XGBoost classifier to predict customer churn with 92% accuracy, significantly reducing marketing
+            spend.
+          </p>
+          <a class="portfolio__link" href="https://theuselessweb.com/" target="_blank">
+            <span>View Analysis <i class="fas fa-arrow-circle-right"></i></span>
+          </a>
         </div>
-
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <div class="contact-button" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500"
-          data-aos-duration="1000">
-          <button href="#!" class="btn btn-red" name="submit" type="submit">
-            Send Message
-          </button>
+        <div class="portfolio__data swiper-slide">
+          <h3 class="portfolio__title">Time Series Forecasting</h3>
+          <div class="portfolio__img">
+            <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+2+Image"
+              alt="Time Series Forecasting Image" />
+          </div>
+          <p class="portfolio__description">
+            Used Prophet and ARIMA to forecast sales with a 5% margin of error for a retail client, aiding inventory
+            management.
+          </p>
+          <a class="portfolio__link" href="https://theuselessweb.com/" target="_blank">
+            <span>View Analysis <i class="fas fa-arrow-circle-right"></i></span>
+          </a>
         </div>
+        <div class="portfolio__data swiper-slide">
+          <h3 class="portfolio__title">NLP Sentiment Analysis</h3>
+          <div class="portfolio__img">
+            <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+3+Image" alt="NLP Sentiment Analysis Image" />
+          </div>
+          <p class="portfolio__description">Developed an NLP pipeline using BERT to analyze customer feedback sentiment
+            from online reviews.</p>
+          <a class="portfolio__link" href="https://theuselessweb.com/" target="_blank">
+            <span>View Analysis <i class="fas fa-arrow-circle-right"></i></span>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="contact section" id="contact">
+    <h2 class="section-title" data-aos="fade-up">GET IN TOUCH</h2>
+    <p class="section-subtitle" data-aos="fade-up">
+      Let's discuss how data-driven solutions can solve your business challenges.
+    </p>
+    <div class="contact__container bd-container bd-grid" data-aos="fade-up">
+      <form action="sendmail.php" method="POST" class="contact__form">
+        <div class="contact__inputs">
+          <input type="text" name="contact_name" placeholder="Name" class="contact__input" required />
+          <input type="email" name="contact_email" placeholder="Email" class="contact__input" required />
+        </div>
+        <input type="text" name="contact_subject" placeholder="Project/Inquiry Subject" class="contact__input"
+          required />
+        <textarea name="contact_message" id="contact_message" cols="0" rows="10" placeholder="Message"
+          class="contact__input" required></textarea>
+        <input type="submit" value="Send Message" class="home__hire contact__button" />
       </form>
-      <div class="response"></div>
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-row">
-        <div class="social-links-row footer-social">
-          <a href="https://github.com/vashu-tyagii" target="_blank" rel="noopener noreferrer">
-            <img src="img/social_icons/github.svg" alt="Link to GitHub account" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/vashu-tyagi-310342375/" target="_blank" rel="noopener noreferrer">
-            <img src="img/social_icons/linkedin.svg" alt="Link to linkedin profile" />
-          </a>
-
-          <a href="https://www.facebook.com/vashu.tyagii" target="_blank" rel="noopener noreferrer">
-            <img src="img/social_icons/facebook.svg" alt="Link to facebook profile" /></a>
-
-          <a href="https://www.instagram.com/vashu.tyagii/" target="_blank" rel="noopener noreferrer">
-            <img src="img/social_icons/instagram.svg" alt="Link to instagram profile" /></a>
-        </div>
-
-        <div class="footer-copyright">
-          <p>&copy; Copyright Vashu Tyagi 2025</p>
-        </div>
-      </div>
+  <footer class="footer section">
+    <div class="footer__container bd-grid">
+      <h3 class="footer__copy">>&copy; 2025 Reserved by Vashu Tyagi</h3>
     </div>
   </footer>
-
-  <div id="goToTop" class="goToTop">
-    <a href="#home">
-      <img src="img/icons/arrow_up.svg" alt="Back to top" /></a>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      delay: 0
+    });
+  </script>
 </body>
 
 </html>

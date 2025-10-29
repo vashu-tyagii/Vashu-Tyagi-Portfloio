@@ -1,0 +1,840 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Base */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: #a2acbd;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Class CSS */
+.section {
+  padding: 3rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #2a3749;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 0.15rem;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #e4a109;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  color: #2a3749;
+  margin: 1.8rem 3rem;
+}
+
+/* Layout */
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #2a3749;
+}
+
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #2a3749;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(165, 146, 146, 0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+
+.nav__link {
+  color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #e4a109;
+  text-decoration-line: underline;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: #f9f9f9;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.nav__logo:hover,
+.nav__toggle:hover {
+  color: #e4a109;
+  transition: 0.3s ease;
+}
+
+.show-menu {
+  top: 3rem;
+}
+
+.active-link {
+  position: relative;
+}
+
+.active-link:after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #e4a109;
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(24, 22, 22, 0.301);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle,
+.scroll-header .nav__link {
+  color: #2a3749;
+}
+
+.scroll-header .nav__link:hover {
+  color: #a2acbd;
+}
+
+.scroll-header .nav__menu {
+  background-color: #f9f9f9;
+}
+
+.home {
+  background-color: #2a3749;
+  margin-bottom: 4rem;
+}
+
+.home__container {
+  position: relative;
+  /* NOTE: The $header-height variable is not defined in this CSS. Using a fallback for stability. */
+  height: calc(100vh - 3rem);
+  grid-template-rows: repeat(2, max-content);
+  align-content: space-around;
+}
+
+.home__data {
+  color: #f9f9f9;
+  padding: 1rem 0.35rem;
+  z-index: 10;
+}
+
+.home__greeting {
+  display: block;
+  font-weight: 700;
+  color: #a2acbd;
+}
+
+.home__title {
+  display: block;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #e4a109;
+  width: max-content;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.home__career {
+  display: block;
+  color: #e4a109;
+  line-height: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.home__description {
+  color: #a2acbd;
+}
+
+.home button {
+  margin-top: 1.5rem;
+}
+
+.home-btn {
+  color: #f9f9f9;
+  background-color: black;
+  border: 0;
+  margin: 0.1rem;
+}
+
+/* Re-using home__hire style for contact button */
+.home__hire {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #e4a109;
+  color: #2a3749;
+  padding: 0.5rem 2rem;
+  border: 1px #e4a109 solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home__hire:hover {
+  background-color: #2a3749;
+  color: #e4a109;
+  border: 1px #e4a109 solid;
+  transition: 0.3s ease-in;
+}
+
+.home__hire:focus {
+  outline: 0;
+}
+
+.home__download {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #2a3749;
+  color: #e4a109;
+  padding: 0.5rem 0.65rem;
+  border: 1px #e4a109 solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home__download:hover {
+  background-color: #e4a109;
+  color: #2a3749;
+  transition: 0.3s;
+}
+
+.home__download:focus {
+  outline: 0;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  font-size: 1.3rem;
+  margin-top: 6rem;
+}
+
+.home__icon {
+  cursor: pointer;
+  margin: 0.5rem;
+  color: #f9f9f9;
+}
+
+.home__icon:hover {
+  color: #e4a109;
+  transition: 0.3s;
+}
+
+.home__icon:focus {
+  outline: 0;
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home__img img {
+  width: 240px;
+  filter: drop-shadow(1rem 0.8rem 2rem rgba(7, 7, 7, 0.76));
+}
+
+/* Contact Form Styles */
+.contact__form {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* Default to 1 column for small screens */
+  column-gap: 1rem;
+}
+
+.contact__input,
+.contact__button {
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  /* Use font family from body/base */
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #2a3749;
+  color: #2a3749;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  resize: none;
+}
+
+.contact__input::placeholder {
+  color: #a2acbd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.contact__button {
+  cursor: pointer;
+  border: none;
+  /* Inherits styles from .home__hire for consistent look */
+  justify-self: center;
+  /* Align button to the left */
+}
+
+.services {
+  background-color: #f9f9f9;
+  padding-bottom: 4rem;
+}
+
+.services__section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #2a3749;
+  letter-spacing: 0.25rem;
+}
+
+/* Default services__container grid - now handled by media queries below */
+/* .services__container { display: grid; row-gap: 1.5rem; } */
+
+.services__data {
+  display: flex;
+  flex-direction: column;
+  ;
+  /* This will be overridden by .skill__tile for flex */
+  padding: 2rem 0rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  background: #2a3749;
+}
+
+.services__data:nth-of-type(4) img {
+  /* This specific image rule will be overridden by the SVG rules in skill__tile */
+  height: 230px;
+}
+
+.services__img {
+  width: 230px;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  /* Centers the 230px block horizontally */
+  margin-right: auto;
+  /* Centers the 230px block horizontally */
+  /* The original 'justify-self: center;' is removed as 'margin: auto' is more robust here. */
+}
+
+.services__title {
+  color: #e4a109;
+  margin-bottom: 0.5rem;
+}
+
+.services__description {
+  color: #f9f9f9;
+}
+
+.portfolio {
+  background-color: #f9f9f9;
+  padding-bottom: 4rem;
+}
+
+.portfolio__section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #2a3749;
+  letter-spacing: 0.25rem;
+}
+
+.portfolio__container {
+  /* Change from flex to grid for better control on desktop */
+  display: grid;
+  gap: 1.5rem;
+  /* Use the default bd-grid gap */
+}
+
+.portfolio__data {
+  display: grid;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  background: #2a3749;
+}
+
+.portfolio__img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  justify-self: center;
+}
+
+.portfolio__img img {
+  border-radius: 8px;
+  box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.076),
+    0 2.3px 5.3px rgba(0, 0, 0, 0.109), 0 4.4px 10px rgba(0, 0, 0, 0.135),
+    0 7.8px 17.9px rgba(0, 0, 0, 0.161), 0 14.6px 33.4px rgba(0, 0, 0, 0.194),
+    0 35px 80px rgba(0, 0, 0, 0.27);
+}
+
+.portfolio__title {
+  color: #e4a109;
+  margin-bottom: 1rem;
+}
+
+.portfolio__description {
+  color: #f9f9f9;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio__link {
+  margin-bottom: 3rem;
+}
+
+.portfolio__link span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: #2a3749;
+  color: #e4a109;
+  padding: 0.5rem 1rem;
+  border: 1px #e4a109 solid;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.portfolio__link span:hover {
+  background-color: #e4a109;
+  color: #2a3749;
+  transition: 0.3s;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #a2acbd;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e4a109;
+}
+
+.footer {
+  background-color: #2a3749;
+}
+
+.footer__container {
+  display: grid;
+  text-align: center;
+  padding: 1.5rem 0;
+  /* Add padding to footer for better spacing */
+}
+
+.footer__copy {
+  text-align: center;
+  font-weight: 100;
+  color: #e4a109;
+  margin-bottom: 0;
+  /* Fix unnecessary margin from p/h3 reset */
+}
+
+.footer__copy-link {
+  color: #e4a109;
+  text-decoration: underline;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__box p {
+  padding-bottom: 0.3rem;
+  color: #f9f9f9;
+}
+
+.footer__box a {
+  color: #a2acbd;
+}
+
+@media (min-width: 506px) {
+  .home__img img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for portfolio projects */
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* NOTE: The $header-height variable is not defined in this CSS. Using a fallback for stability. */
+  .nav {
+    height: calc(3rem + 1.5rem);
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .home__container {
+    height: 100vh;
+    grid-template-rows: max-content 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: flex-end;
+  }
+
+  .home__greeting {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .home__title {
+    font-size: 2.1rem;
+  }
+
+  .home__career {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .home__description {
+    font-size: 1rem;
+  }
+
+  .home__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+
+  .home__social a {
+    margin-right: 1.5rem;
+  }
+
+  .home__img {
+    width: max-content;
+    top: 100px;
+  }
+
+  .home__img img {
+    width: 380px;
+    height: 700px;
+  }
+
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /* Ensure grid gap is used */
+  }
+
+  .portfolio__title {
+    font-size: 1.5rem;
+  }
+
+  .portfolio__img {
+    width: max-content;
+  }
+
+  .portfolio__img img {
+    width: 550px;
+  }
+
+  .portfolio__description {
+    margin: 2rem 5rem;
+  }
+
+  .portfolio__link span {
+    font-size: 1rem;
+  }
+
+  /* Contact Form for larger screens */
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home__data {
+    padding-top: 2rem;
+  }
+
+  .home__img {
+    height: 670px;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns on large screens */
+  }
+
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns on large screens for projects */
+  }
+}
+
+
+/* ==================================== */
+/* === CORE SKILLS SECTION REDESIGN === */
+/* ==================================== */
+
+/* Override the default services__container grid for a flexible tile layout on larger screens */
+@media (min-width: 768px) {
+  .services__container {
+    /* Revert to 2 columns on tablets, but with the new tile look */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__container {
+    /* Back to 4 columns on desktop, but with the new tile look */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Base style for the new skill tile look (services__data with new class) */
+.services__data.skill__tile {
+  /* Enables horizontal layout (icon beside text) */
+  display: flex;
+  align-items: flex-start;
+  /* Aligns content to the top of the tile */
+  text-align: left;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  /* Space between the icon and the text content */
+
+  /* Enhance Card Appearance */
+  border: 1px solid rgba(228, 161, 9, 0.2);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.services__data.skill__tile:hover {
+  transform: translateY(-5px);
+  /* Lift card on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  /* Stronger shadow */
+}
+
+/* Adjust the icon/SVG size for the horizontal layout */
+.services__data.skill__tile .services__img {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0;
+  margin-top: 0.3rem;
+  /* Small adjustment for alignment */
+  justify-self: initial;
+  /* Reset alignment */
+}
+
+/* Reset image/SVG height override that might be inherited from old code */
+.services__data:nth-of-type(4) img,
+.services__data.skill__tile svg {
+  height: 100%;
+  /* Use 100% height of the container */
+  width: 100%;
+  /* Use 100% width of the container */
+}
+
+/* Container for the title and description */
+.skill__content-wrapper {
+  flex-grow: 1;
+}
+
+/* Reset text alignment */
+.services__data.skill__tile .services__title {
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.15rem;
+  /* Slightly reduced font size for tile */
+}
+
+.services__data.skill__tile .services__description {
+  text-align: left;
+  font-size: 0.85rem;
+  /* Make description smaller */
+  color: #a2acbd;
+  /* Contrast with the dark background */
+}
+
+/* Mobile/Small Screens: Revert to vertical stack for better readability */
+@media (max-width: 767px) {
+  .services__data.skill__tile {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .services__data.skill__tile .services__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .services__data.skill__tile .services__title,
+  .services__data.skill__tile .services__description {
+    text-align: center;
+  }
+}
