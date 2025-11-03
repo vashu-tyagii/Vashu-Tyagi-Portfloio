@@ -538,46 +538,118 @@ img {
   transition: 0.3s;
 }
 
-.contact__form {
-  display: grid;
-  row-gap: 0.5rem;
+/* ======================================= */
+/* --- Optimized Contact Section Styling --- */
+/* ======================================= */
+
+#contact {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  /* Increased padding */
+  text-align: center;
 }
 
-.contact__inputs {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 1rem;
+/* Container for the social icons (ul) */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Increased spacing between tiles for a better look */
+  list-style: none;
+  padding: 0;
+  max-width: 1024px;
+  margin: 3rem auto 0;
+  /* Increased top margin */
 }
 
-.contact__input,
-.contact__button {
-  outline: none;
-  font-family: "Poppins", sans-serif;
-  /* Use font family from body/base */
-  font-size: 0.938rem;
-  font-weight: 500;
-}
-
-.contact__input {
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid #2a3749;
-  color: #2a3749;
-  border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
-  resize: none;
-}
-
-.contact__input::placeholder {
-  color: #a2acbd;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-.contact__button {
+/* Style for each social link (li) - creating the "tile" effect */
+#contact li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a3749;
+  /* Dark background */
+  padding: 2rem 1rem;
+  /* Increased padding for bigger tiles */
+  border-radius: 0.75rem;
+  /* Slightly rounder corners */
+  width: 150px;
+  /* **Increased Tile Width** */
+  height: 150px;
+  /* **Set fixed height for square tiles** */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Stronger, better shadow */
   cursor: pointer;
-  border: none;
-  justify-self: center;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Hover effect for the tile */
+#contact li:hover {
+  transform: translateY(-8px) scale(1.03);
+  /* Lift higher and slightly enlarge */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* TARGET THE ICON ITSELF (The 'i' tag or the image/svg if you are still using them) */
+#contact li a i,
+#contact li a img {
+  /* This style targets both the Font Awesome <i> and the old <img>/svg */
+  font-size: 3.5rem;
+  /* **Significantly Larger Icon Size** */
+  width: 50px;
+  /* Ensure image/svg fits larger container */
+  height: 50px;
+  color: #e4a109;
+  /* **Gold/Accent Color** for the icon */
+  margin-bottom: 0.75rem;
+  transition: color 0.3s, filter 0.3s;
+}
+
+/* Icon Hover Effect: change color to white/light on hover */
+#contact li:hover a i {
+  color: #f9f9f9;
+}
+
+/* Styling the text below the icon */
+#contact li p {
+  font-size: 1rem;
+  /* Slightly larger text */
+  color: #f9f9f9;
+  /* Changed text color to white for better contrast */
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: color 0.3s;
+}
+
+/* Text Hover Effect: change color to gold on hover */
+#contact li:hover p {
+  color: #e4a109;
+}
+
+
+/* Responsive adjustment for small screens */
+@media screen and (max-width: 600px) {
+  #contact ul {
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #contact li {
+    width: 130px;
+    height: 130px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  #contact li a i {
+    font-size: 3rem;
+  }
+
+  #contact li p {
+    font-size: 0.9rem;
+  }
 }
 
 .footer {
