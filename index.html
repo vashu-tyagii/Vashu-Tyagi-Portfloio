@@ -38,8 +38,6 @@
 
 <body>
 
-  <!--========  Header Section  ========-->
-
   <header class="l-header" id="header">
     <nav class="nav bd-container">
       <a href="#" class="nav__logo">Vashu Tyagi</a>
@@ -51,9 +49,6 @@
           <li class="nav__item">
             <a href="#services" class="nav__link">Skills</a>
           </li>
-          <!-- <li class="nav__item">
-            <a href="#experience" class="nav__link">Experience</a>
-          </li> -->
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">Projects</a>
           </li>
@@ -69,11 +64,7 @@
     </nav>
   </header>
 
-  <!-- ========  Main Area ======== -->
-
   <main>
-
-    <!-- ========  Home Section  ======== -->
 
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
@@ -93,7 +84,7 @@
               actionable insights from complex datasets using Python, R, and cloud platforms.
             </p>
           </div>
-          <div class="home__button">
+          <div class="home__button-wrapper">
             <a href="#" download="">
               <button class="home__download" data-aos="fade-up">DOWNLOAD CV</button>
             </a>
@@ -107,280 +98,121 @@
                 class="fab fa-linkedin"></i></a>
           </div>
           <div class="home__img" data-aos="fade-up">
-            <img src="./assets/img/main-image.svg" alt="" class="home-image" />
+            <img src="./assets/img/main-image.svg" alt="Vashu Tyagi - Data Scientist" class="home-image" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========  Services Section  ======== -->
-
-    <!-- DATA ANALYST -->
     <section class="services" id="services">
-      <h2 class="section-title" data-aos="fade-up">CORE ANALYTICS SKILLS</h2>
+
+      <!-- DATA ANALYST -->
+      <h2 class="section-title" data-aos="fade-up">Data Analyst: Descriptive Insight & Reporting</h2>
       <p class="section-subtitle" data-aos="fade-up">
-        My analytical expertise centers on extracting <b>actionable business insights</b> from complex data, driving
-        informed decision-making and performance improvements.
+        Transforming Raw Data into Actionable Business Intelligence.
       </p>
+
+      <!-- DATA SCIENTIST -->
+      <!-- <h2 class="section-title" data-aos="fade-up">Data Scientist: Predictive Modeling & Experimentation</h2>
+      <p class="section-subtitle" data-aos="fade-up">
+        Developing and Validating Robust, Explainable Machine Learning Models.
+      </p> -->
+
+      <!-- FULL STACK DATA SCIENTIST -->
+      <!-- <h2 class="section-title" data-aos="fade-up">DATA SCIENCE SKILL HIERARCHY</h2>
+      <p class="section-subtitle" data-aos="fade-up">
+        My expertise spans the <b>full data science lifecycle</b>, from foundational data analysis to deploying scalable,
+        production-ready machine learning systems.
+      </p>  -->
       <div class="services__container bd-container bd-grid">
 
         <div class="services__data skill__tile" data-aos="fade-up">
           <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <rect x="50" y="50" width="150" height="150" fill="#2A3749" rx="10" stroke="#E4A109" stroke-width="4" />
-              <line x1="50" y1="90" x2="200" y2="90" stroke="#E4A109" stroke-width="3" />
-              <line x1="50" y1="130" x2="200" y2="130" stroke="#E4A109" stroke-width="3" />
-              <line x1="50" y1="170" x2="200" y2="170" stroke="#E4A109" stroke-width="3" />
-              <rect x="65" y="105" width="20" height="15" fill="#F9F9F9" />
-              <rect x="110" y="60" width="15" height="15" fill="#F9F9F9" />
-              <rect x="155" y="145" width="30" height="15" fill="#F9F9F9" />
-              <polyline points="210,40 190,60 210,80" fill="none" stroke="#F9F9F9" stroke-width="8" />
-              <polyline points="210,40 230,60 210,80" fill="none" stroke="#F9F9F9" stroke-width="8" />
-            </svg>
+            <i class="fas fa-database"></i>
           </div>
           <div class="skill__content-wrapper">
-            <h3 class="services__title">Data Profiling, Cleaning, & SQL Mastery</h3>
+            <h3 class="services__title">Data Analyst (Foundational)</h3>
             <p class="services__description">
-              Expertly profile and clean data from various sources to ensure <b>analytic rigor</b>. Utilize
-              <b>advanced SQL queries (joins, window functions)</b> and <b>Pandas</b> for robust data manipulation
-              and transformation.
+              **SQL Mastery** (joins, window functions), Data Wrangling with **NumPy/Pandas**, BI visualization in
+              **PowerBI**, report generation in **Excel**, and **Basic Statistics**.
             </p>
           </div>
         </div>
 
         <div class="services__data skill__tile" data-aos="fade-up">
           <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <rect x="25" y="35" width="200" height="150" rx="15" fill="#2A3749" stroke="#E4A109" stroke-width="4" />
-              <rect x="45" y="120" width="20" height="50" fill="#E4A109" />
-              <rect x="75" y="90" width="20" height="80" fill="#F9F9F9" />
-              <rect x="105" y="135" width="20" height="35" fill="#E4A109" />
-              <polyline points="140,140 160,100 180,130 200,90" fill="none" stroke="#F9F9F9" stroke-width="4" />
-              <circle cx="140" cy="140" r="5" fill="#F9F9F9" />
-              <circle cx="160" cy="100" r="5" fill="#F9F9F9" />
-              <circle cx="180" cy="130" r="5" fill="#F9F9F9" />
-              <circle cx="200" cy="90" r="5" fill="#F9F9F9" />
-            </svg>
+            <i class="fas fa-chart-line"></i>
           </div>
           <div class="skill__content-wrapper">
-            <h3 class="services__title">Strategic Data Visualization & BI Storytelling</h3>
+            <h3 class="services__title">Data Visualization & Storytelling</h3>
             <p class="services__description">
-              Develop and maintain <b>interactive, high-impact dashboards</b> using <b>Tableau/Power BI</b> to monitor
-              KPIs. Translate complex data into compelling narratives that drive <b>organizational action</b>.
+              Creating high-impact, custom static and interactive plots using **Matplotlib** and **Seaborn**.
+              Focus on translating complex analysis into clear visual narratives.
             </p>
           </div>
         </div>
 
         <div class="services__data skill__tile" data-aos="fade-up">
           <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <path d="M 50 150 C 70 110, 180 110, 200 150" fill="none" stroke="#F9F9F9" stroke-width="4" />
-              <path d="M 50 150 C 70 190, 180 190, 200 150" fill="#2A3749" opacity="0.8" />
-              <line x1="125" y1="110" x2="125" y2="150" stroke="#E4A109" stroke-width="4" />
-              <circle cx="125" cy="110" r="10" fill="#E4A109" />
-              <text x="110" y="210" font-family="Arial" font-size="28" fill="#F9F9F9">P</text>
-              <text x="140" y="210" font-family="Arial" font-size="28" fill="#F9F9F9">μ</text>
-              <text x="50" y="210" font-family="Arial" font-size="28" fill="#F9F9F9">H₀</text>
-            </svg>
+            <i class="fas fa-brain"></i>
           </div>
           <div class="skill__content-wrapper">
-            <h3 class="services__title">Statistical Analysis & Experimentation (A/B)</h3>
+            <h3 class="services__title">Applied Data Scientist (Basic ML)</h3>
             <p class="services__description">
-              Apply <b>descriptive and inferential statistics</b> (T-tests, Regressions) to uncover causality and
-              patterns. Design and analyze <b>A/B tests and experiments</b> to rigorously measure the impact of
-              business changes.
+              End-to-end model building (Classification, Regression, Clustering) with **Scikit-learn**. Focus on
+              feature engineering, hyperparameter tuning, and **Basic Machine Learning** concepts.
             </p>
           </div>
         </div>
 
         <div class="services__data skill__tile" data-aos="fade-up">
           <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <rect x="50" y="50" width="150" height="120" rx="10" fill="#F9F9F9" stroke="#E4A109" stroke-width="3" />
-              <rect x="65" y="65" width="120" height="15" fill="#2A3749" />
-              <rect x="65" y="90" width="80" height="15" fill="#E4A109" />
-              <rect x="65" y="115" width="100" height="15" fill="#2A3749" />
-              <rect x="65" y="140" width="50" height="15" fill="#E4A109" />
-              <path
-                d="M 210 100 Q 230 100, 230 120 L 230 150 Q 230 170, 210 170 L 190 170 L 170 190 L 180 170 Q 150 170, 150 150 L 150 100 Q 150 80, 170 80 L 190 80 L 210 80 Z"
-                fill="#2A3749" />
-              <text x="175" y="140" font-family="Arial" font-size="25" fill="#F9F9F9">!</text>
-            </svg>
+            <i class="fas fa-cloud-upload-alt"></i>
           </div>
           <div class="skill__content-wrapper">
-            <h3 class="services__title">Business Metrics & Stakeholder Communication</h3>
+            <h3 class="services__title">Full-Stack ML Engineer (MLOps)</h3>
             <p class="services__description">
-              Define and track <b>key business metrics (KPIs)</b>, translating complex findings into clear,
-              non-technical recommendations for executives and cross-functional teams using tools like <b>Excel and
-                PowerPoint</b>.
+              Productionizing models (including **DL/AI**) via **API endpoints (Flask/Streamlit)**, utilizing
+              **Docker**, and managing ML pipelines on Cloud platforms (**MLOps**).
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DATA SCIENTIST  -->
-    <!-- <section class="services" id="services">
-      <h2 class="section-title" data-aos="fade-up">CORE SKILLS</h2>
+    <section class="experience section" id="experience">
+      <h2 class="section-title" data-aos="fade-up">EXPERIENCE</h2>
       <p class="section-subtitle" data-aos="fade-up">
-        My technical expertise spans the <b>full data science lifecycle</b>, from foundational research to
-        deploying
-        scalable machine learning systems.
+        My professional journey and key data science roles.
       </p>
-      <div class="services__container bd-container bd-grid">
+      <div class="experience__container bd-container bd-grid">
 
-        <div class="services__data skill__tile" data-aos="fade-up">
-          <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <polygon points="50,50 200,50 160,100 90,100" fill="#2A3749" stroke="#E4A109" stroke-width="4" />
-              <rect x="115" y="100" width="20" height="30" fill="#2A3749" />
-              <rect x="60" y="10" width="15" height="15" fill="#F9F9F9" />
-              <circle cx="85" cy="20" r="5" fill="#E4A109" />
-              <rect x="160" y="30" width="10" height="20" fill="#F9F9F9" />
-              <rect x="60" y="150" width="130" height="70" fill="#F9F9F9" stroke="#2A3749" stroke-width="2" />
-              <line x1="60" y1="170" x2="190" y2="170" stroke="#2A3749" stroke-width="2" />
-              <line x1="95" y1="150" x2="95" y2="220" stroke="#2A3749" stroke-width="2" />
-              <line x1="155" y1="150" x2="155" y2="220" stroke="#2A3749" stroke-width="2" />
-            </svg>
-          </div>
-          <div class="skill__content-wrapper">
-            <h3 class="services__title">Data Engineering & Feature Extraction</h3>
-            <p class="services__description">
-              Engineered and scaled analytic datasets from <b>disparate SQL and Cloud sources</b>. Automated cleaning
-              and
-              transformation workflows using advanced <b>Pandas, NumPy, and SQL window functions</b> to derive reliable
-              model features.
-            </p>
-          </div>
+        <div class="experience__data" data-aos="fade-up">
+          <h3 class="experience__role">Senior Data Scientist</h3>
+          <span class="experience__company">Tech Innovators Inc.</span>
+          <span class="experience__duration"><i class="far fa-calendar-alt"></i> Jan 2022 - Present</span>
+          <ul class="experience__details">
+            <li>Led a team to develop and deploy a recommendation engine, increasing user engagement by 15%.</li>
+            <li>Managed the end-to-end data pipeline for a high-volume financial dataset.</li>
+            <li>Mentored junior analysts in Python and statistical modeling best practices.</li>
+          </ul>
         </div>
 
-        <div class="services__data skill__tile" data-aos="fade-up">
-          <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <rect x="25" y="35" width="200" height="150" rx="15" fill="#2A3749" stroke="#E4A109" stroke-width="4" />
-              <rect x="45" y="120" width="20" height="50" fill="#E4A109" />
-              <rect x="75" y="90" width="20" height="80" fill="#F9F9F9" />
-              <rect x="105" y="135" width="20" height="35" fill="#E4A109" />
-              <polyline points="140,140 160,100 180,130 200,90" fill="none" stroke="#F9F9F9" stroke-width="4" />
-              <circle cx="140" cy="140" r="5" fill="#E4A109" />
-              <circle cx="160" cy="100" r="5" fill="#E4A109" />
-              <circle cx="180" cy="130" r="5" fill="#E4A109" />
-              <circle cx="200" cy="90" r="5" fill="#E4A109" />
-            </svg>
-          </div>
-          <div class="skill__content-wrapper">
-            <h3 class="services__title">Advanced Experimentation & Model Insight</h3>
-            <p class="services__description">
-              Designed and executed **A/B tests and experimentation pipelines** for product features. Developed
-              advanced, **ML-centric plots (e.g., SHAP, Feature Importance)** with <b>Matplotlib/Seaborn</b> for deep
-              model
-              insight and interpretability.
-            </p>
-          </div>
+        <div class="experience__data" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="experience__role">Data Analyst</h3>
+          <span class="experience__company">Global Retail Corp</span>
+          <span class="experience__duration"><i class="far fa-calendar-alt"></i> Aug 2019 - Dec 2021</span>
+          <ul class="experience__details">
+            <li>Created interactive dashboards in Tableau for key business metrics.</li>
+            <li>Conducted A/B testing analysis for marketing campaigns.</li>
+            <li>Wrote complex SQL queries to extract data for C-suite reporting.</li>
+          </ul>
         </div>
 
-        <div class="services__data skill__tile" data-aos="fade-up">
-          <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <line x1="50" y1="50" x2="125" y2="125" stroke="#E4A109" stroke-width="4" />
-              <line x1="50" y1="150" x2="125" y2="125" stroke="#E4A109" stroke-width="4" />
-              <line x1="125" y1="125" x2="200" y2="50" stroke="#E4A109" stroke-width="4" />
-              <line x1="125" y1="125" x2="200" y2="150" stroke="#E4A109" stroke-width="4" />
-              <circle cx="50" cy="50" r="10" fill="#F9F9F9" />
-              <circle cx="50" cy="150" r="10" fill="#F9F9F9" />
-              <circle cx="125" cy="125" r="12" fill="#E4A109" />
-              <circle cx="200" cy="50" r="10" fill="#F9F9F9" />
-              <circle cx="200" cy="150" r="10" fill="#F9F9F9" />
-              <rect x="180" y="20" width="30" height="30" fill="#2A3749" stroke="#E4A109" stroke-width="3" />
-              <text x="185" y="45" font-family="Arial" font-size="28" fill="#E4A109">Σ</text>
-            </svg>
-          </div>
-          <div class="skill__content-wrapper">
-            <h3 class="services__title">Machine Learning & Deep Learning</h3>
-            <p class="services__description">
-              Built and optimized robust **predictive models** (Classification, Regression, Time-Series) and <b>Deep
-                Learning</b> architectures using <b>TensorFlow, PyTorch, and Scikit-learn</b>. Focus on model validation
-              and
-              hyperparameter tuning.
-            </p>
-          </div>
-        </div>
-
-        <div class="services__data skill__tile" data-aos="fade-up">
-          <div class="services__img">
-            <svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <rect width="100%" height="100%" fill="none" />
-              <circle cx="80" cy="90" r="30" fill="#F9F9F9" />
-              <circle cx="130" cy="65" r="40" fill="#F9F9F9" />
-              <circle cx="180" cy="90" r="30" fill="#F9F9F9" />
-              <rect x="70" y="85" width="120" height="35" fill="#F9F9F9" />
-              <rect x="100" y="170" width="50" height="50" rx="5" fill="#2A3749" stroke="#E4A109" stroke-width="3" />
-              <text x="108" y="200" font-family="Arial" font-size="20" fill="#F9F9F9">OPS</text>
-              <line x1="125" y1="165" x2="125" y2="120" stroke="#E4A109" stroke-width="5"
-                marker-end="url(#arrowhead)" />
-              <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-                  <polygon points="0 0, 10 3.5, 0 7" fill="#E4A109" />
-                </marker>
-              </defs>
-            </svg>
-          </div>
-          <div class="skill__content-wrapper">
-            <h3 class="services__title">MLOps & Production Deployment</h3>
-            <p class="services__description">
-              Productionized models via **API endpoints (Flask/Streamlit)** and deployed scalable, containerized
-              solutions
-              (<b>Docker/Kubernetes</b>). Managed end-to-end ML pipelines using <b>AWS Sagemaker/Azure ML</b>.
-            </p>
-          </div>
-        </div>
       </div>
-    </section> -->
+    </section>
 
 
-    <!-- ========  Experience Section  ======== -->
-
-    <!-- <section class="experience section" id="experience">
-    <h2 class="section-title" data-aos="fade-up">EXPERIENCE</h2>
-    <p class="section-subtitle" data-aos="fade-up">
-      My professional journey and key data science roles.
-    </p>
-    <div class="experience__container bd-container bd-grid">
-
-      <div class="experience__data" data-aos="fade-up">
-        <h3 class="experience__role">Senior Data Scientist</h3>
-        <span class="experience__company">Tech Innovators Inc.</span>
-        <span class="experience__duration"><i class="far fa-calendar-alt"></i> Jan 2022 - Present</span>
-        <ul class="experience__details">
-          <li>Led a team to develop and deploy a recommendation engine, increasing user engagement by 15%.</li>
-          <li>Managed the end-to-end data pipeline for a high-volume financial dataset.</li>
-          <li>Mentored junior analysts in Python and statistical modeling best practices.</li>
-        </ul>
-      </div>
-
-      <div class="experience__data" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="experience__role">Data Analyst</h3>
-        <span class="experience__company">Global Retail Corp</span>
-        <span class="experience__duration"><i class="far fa-calendar-alt"></i> Aug 2019 - Dec 2021</span>
-        <ul class="experience__details">
-          <li>Created interactive dashboards in Tableau for key business metrics.</li>
-          <li>Conducted A/B testing analysis for marketing campaigns.</li>
-          <li>Wrote complex SQL queries to extract data for C-suite reporting.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section> -->
-
-
-    <!-- ========  Portfolio Section  ======== -->
 
     <section class="portfolio section" id="portfolio">
       <h2 class="section-title" data-aos="fade-up">PROJECTS</h2>
@@ -389,7 +221,7 @@
       </p>
       <div class="portfolio__container bd-container bd-grid" data-aos="fade-up">
 
-        <div class="portfolio__data" data-aos="fade-up">
+        <div class="portfolio__data project__tile" data-aos="fade-up">
           <div class="portfolio__img">
             <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+1+Image" alt="Churn Prediction Model Image" />
           </div>
@@ -403,7 +235,7 @@
           </a>
         </div>
 
-        <div class="portfolio__data" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio__data project__tile" data-aos="fade-up" data-aos-delay="100">
           <div class="portfolio__img">
             <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+2+Image"
               alt="Time Series Forecasting Image" />
@@ -418,7 +250,7 @@
           </a>
         </div>
 
-        <div class="portfolio__data" data-aos="fade-up" data-aos-delay="200">
+        <div class="portfolio__data project__tile" data-aos="fade-up" data-aos-delay="200">
           <div class="portfolio__img">
             <img src="https://dummyimage.com/640x360/fff/aaa&text=Project+3+Image" alt="NLP Sentiment Analysis Image" />
           </div>
@@ -433,7 +265,6 @@
       </div>
     </section>
 
-    <!-- ========  Contact Section  ======== -->
     <section id="contact" class="section">
       <h2 class="section-title" data-aos="fade-up">CONNECT WITH ME</h2>
       <p class="section-subtitle" data-aos="fade-up">
@@ -469,8 +300,6 @@
       </ul>
     </section>
   </main>
-
-  <!-- ========  Footer Section  ======== -->
 
   <footer class="footer section">
     <div class="footer__container bd-grid">

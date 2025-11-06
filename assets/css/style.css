@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* Base */
+/* ================================================= */
+/* 🚀 BASE STYLES & RESETS */
+/* ================================================= */
+
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -54,6 +57,8 @@ img {
   display: block;
 }
 
+/* --- Utility Classes --- */
+
 .section {
   padding: 3rem 0 2rem;
 }
@@ -91,7 +96,10 @@ img {
   margin: 1.8rem 3rem;
 }
 
-/* Layout */
+/* ================================================= */
+/* 📐 LAYOUT & NAVIGATION */
+/* ================================================= */
+
 .bd-container {
   max-width: 1024px;
   width: calc(100% - 2rem);
@@ -141,11 +149,12 @@ img {
 
 .nav__link {
   color: #f9f9f9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .nav__link:hover {
   color: #e4a109;
+  transform: translateX(5px);
   text-decoration-line: underline;
 }
 
@@ -199,6 +208,10 @@ img {
 .scroll-header .nav__menu {
   background-color: #f9f9f9;
 }
+
+/* ================================================= */
+/* 🏡 HOME SECTION */
+/* ================================================= */
 
 .home {
   background-color: #2a3749;
@@ -312,11 +325,12 @@ img {
   cursor: pointer;
   margin: 0.5rem;
   color: #f9f9f9;
+  transition: 0.3s;
 }
 
 .home__icon:hover {
   color: #e4a109;
-  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .home__icon:focus {
@@ -334,6 +348,10 @@ img {
   filter: drop-shadow(1rem 0.8rem 2rem rgba(7, 7, 7, 0.76));
 }
 
+/* ================================================= */
+/* 🛠️ SERVICES (SKILLS) SECTION */
+/* ================================================= */
+
 .services {
   background-color: #f9f9f9;
   padding-bottom: 4rem;
@@ -347,36 +365,72 @@ img {
   letter-spacing: 0.25rem;
 }
 
-.services__data {
+
+.services__data.skill__tile {
   display: flex;
-  flex-direction: column;
-  padding: 2rem 0rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  transition: 0.4s;
-  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
-  background: #2a3749;
-}
-
-.services__data:nth-of-type(4) img {
-  height: 230px;
-}
-
-.services__img {
-  width: 230px;
-  margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.services__title {
+  align-items: flex-start;
+  text-align: left;
   color: #e4a109;
-  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  background: #2a3749;
+  border: 1px solid rgba(228, 161, 9, 0.2);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
 }
 
-.services__description {
-  color: #f9f9f9;
+.services__data.skill__tile:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
+.services__data.skill__tile .services__img {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0.3rem 0 0 0;
+  justify-self: initial;
+}
+
+.services__data.skill__tile .services__img i {
+  font-size: 2.5rem;
+  color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.services__data.skill__tile:hover .services__img i {
+  color: #e4a109;
+}
+
+.services__data:nth-of-type(4) img,
+.services__data.skill__tile svg,
+.services__data.skill__tile i {
+  height: 100%;
+  width: 100%;
+}
+
+
+.skill__content-wrapper {
+  flex-grow: 1;
+}
+
+.services__data.skill__tile .services__title {
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.services__data.skill__tile .services__description {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #a2acbd;
+}
+
+
+/* ================================================= */
+/* 💼 EXPERIENCE SECTION */
+/* ================================================= */
 
 .experience {
   background-color: #f9f9f9;
@@ -384,7 +438,8 @@ img {
 }
 
 .experience__container {
-  row-gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .experience__data {
@@ -396,8 +451,8 @@ img {
 }
 
 .experience__data:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .experience__role {
@@ -448,6 +503,10 @@ img {
   font-size: 1.1rem;
 }
 
+/* ================================================= */
+/* 📂 PORTFOLIO (PROJECTS) SECTION */
+/* ================================================= */
+
 .portfolio {
   background-color: #f9f9f9;
   padding-bottom: 4rem;
@@ -464,7 +523,6 @@ img {
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* Default to 1 column for small screens */
   row-gap: 2rem;
 }
 
@@ -478,8 +536,9 @@ img {
 }
 
 .portfolio__data:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Enhanced animation to match the Contact tiles */
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio__img {
@@ -530,6 +589,7 @@ img {
   border: 1px #e4a109 solid;
   cursor: pointer;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 .portfolio__link span:hover {
@@ -538,65 +598,13 @@ img {
   transition: 0.3s;
 }
 
-.experience__container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-.services__data.skill__tile {
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  padding: 1.5rem;
-  gap: 1.5rem;
-  border: 1px solid rgba(228, 161, 9, 0.2);
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
-
-.services__data.skill__tile:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-}
-
-.services__data.skill__tile .services__img {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 0;
-  margin-top: 0.3rem;
-  justify-self: initial;
-}
-
-.services__data:nth-of-type(4) img,
-.services__data.skill__tile svg {
-  height: 100%;
-  width: 100%;
-}
-
-.skill__content-wrapper {
-  flex-grow: 1;
-}
-
-.services__data.skill__tile .services__title {
-  text-align: left;
-  margin-top: 0;
-  font-size: 1.15rem;
-}
-
-.services__data.skill__tile .services__description {
-  text-align: left;
-  font-size: 0.85rem;
-  color: #a2acbd;
-}
-
-/* ======================================= */
-/* --- Optimized Contact Section Styling --- */
-/* ======================================= */
+/* ================================================= */
+/* 📞 CONTACT SECTION */
+/* ================================================= */
 
 #contact {
   padding-top: 3rem;
   padding-bottom: 4rem;
-  /* Increased padding */
   text-align: center;
 }
 
@@ -606,54 +614,40 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  /* Increased spacing between tiles for a better look */
   list-style: none;
   padding: 0;
   max-width: 1024px;
   margin: 3rem auto 0;
-  /* Increased top margin */
 }
 
-/* Style for each social link (li) - creating the "tile" effect */
+/* Style for each social link (li) - the tile */
 #contact li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #2a3749;
-  /* Dark background */
   padding: 2rem 1rem;
-  /* Increased padding for bigger tiles */
   border-radius: 0.75rem;
-  /* Slightly rounder corners */
   width: 150px;
-  /* **Increased Tile Width** */
   height: 150px;
-  /* **Set fixed height for square tiles** */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  /* Stronger, better shadow */
   cursor: pointer;
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-/* Hover effect for the tile */
+/* Hover effect for the tile (THE ANIMATION YOU COPIED) */
 #contact li:hover {
-  transform: translateY(-8px) scale(1.03);
-  /* Lift higher and slightly enlarge */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* TARGET THE ICON ITSELF (The 'i' tag or the image/svg if you are still using them) */
+/* TARGET THE ICON ITSELF */
 #contact li a i,
 #contact li a img {
-  /* This style targets both the Font Awesome <i> and the old <img>/svg */
   font-size: 3.5rem;
-  /* **Significantly Larger Icon Size** */
   width: 50px;
-  /* Ensure image/svg fits larger container */
   height: 50px;
   color: #e4a109;
-  /* **Gold/Accent Color** for the icon */
   margin-bottom: 0.75rem;
   transition: color 0.3s, filter 0.3s;
 }
@@ -666,9 +660,7 @@ img {
 /* Styling the text below the icon */
 #contact li p {
   font-size: 1rem;
-  /* Slightly larger text */
   color: #f9f9f9;
-  /* Changed text color to white for better contrast */
   font-weight: 500;
   margin-top: 0.5rem;
   transition: color 0.3s;
@@ -679,29 +671,9 @@ img {
   color: #e4a109;
 }
 
-
-/* Responsive adjustment for small screens */
-@media screen and (max-width: 600px) {
-  #contact ul {
-    gap: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  #contact li {
-    width: 130px;
-    height: 130px;
-    padding: 1.5rem 0.5rem;
-  }
-
-  #contact li a i {
-    font-size: 3rem;
-  }
-
-  #contact li p {
-    font-size: 0.9rem;
-  }
-}
+/* ================================================= */
+/* 🦶 FOOTER */
+/* ================================================= */
 
 .footer {
   min-height: 100px;
@@ -736,6 +708,34 @@ img {
   color: #f9f9f9;
 }
 
+/* ================================================= */
+/* 📱 MEDIA QUERIES */
+/* ================================================= */
+
+/* Small devices (up to 767px - Mobile Specific) */
+@media screen and (max-width: 600px) {
+  #contact ul {
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #contact li {
+    width: 130px;
+    height: 130px;
+    padding: 1.5rem 0.5rem;
+  }
+
+  #contact li a i {
+    font-size: 3rem;
+  }
+
+  #contact li p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mid-Size devices (506px and up) */
 @media (min-width: 506px) {
   .home__img img {
     width: 300px;
@@ -749,7 +749,7 @@ img {
   .services__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .portfolio__container {
@@ -758,6 +758,7 @@ img {
   }
 }
 
+/* Tablet and larger (768px and up) */
 @media (min-width: 768px) {
   body {
     margin: 0;
@@ -840,10 +841,10 @@ img {
   }
 
   .services__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    /* Ensure grid gap is used */
   }
 
   .portfolio__data {
@@ -880,9 +881,13 @@ img {
   }
 }
 
+/* Large devices (1024px and up) */
 @media (min-width: 1024px) {
+
   .services__container {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
   }
 
@@ -899,19 +904,19 @@ img {
     height: 670px;
   }
 
-  .services__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 
+/* Specific styles for small screens (max-width: 768px) */
 @media (max-width: 768px) {
+
   .services__container {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
   }
 
@@ -935,7 +940,7 @@ img {
   }
 
   .experience__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
 }
