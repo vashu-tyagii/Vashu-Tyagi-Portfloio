@@ -19,22 +19,6 @@ Based on the file structure, this website is built with a focused, vanilla stack
 
 ---
 
-## Data Science Projects Showcase
-
-The core value of this portfolio is the work it presents. Detail the projects clearly:
-
-1.  **Sentiment Analysis of Tweets:**
-    * **Focus:** Natural Language Processing (NLP) techniques.
-    * **Goal:** Demonstrate classification and public opinion analysis.
-2.  **E-commerce Sales Dashboard:**
-    * **Focus:** Data Visualization and Business Intelligence.
-    * **Tools:** Power BI (or Tableau).
-    * **Goal:** Visualize sales trends, optimize marketing, and present actionable insights.
-3.  **Predictive Maintenance Model:**
-    * **Focus:** Supervised Machine Learning (Random Forest).
-    * **Goal:** Forecast equipment failure to proactively reduce downtime and operational costs.
-
----
 
 ## Contact & Connect
 
